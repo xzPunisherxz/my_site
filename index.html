@@ -6,82 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Это сайт резюме Алексея Кутилова" />
     <meta name="keywords" content="Alex, cv, resume" />
-
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Kutilov-card-site</title>
   </head>
   <body>
-    <img src="avatar.jpg" alt="Picture Alex Kutilov" width="300" />
-    <h1>Алексей Кутилов</h1>
+    <div class="container">
+      <div class="card info-container">
+        <img class="img" src="avatar.jpg" alt="Picture Alex Kutilov" />
 
-    <p>Я обучаюсь <strong> разработке</strong> на уроках ResultSchool</p>
-    <p>
-      Я в свободное время обучаюсь <em>программированию</em> и так же спортом
-    </p>
-    <h2>Список социальных сетей:</h2>
-    <a href="https://vk.com/pecik" target="_blank">ВКонтакте</a>
-    <span>|</span>
-    <a href="https://github.com/xzPunisherxz" target="_blank">GitHub</a>
-    <span>|</span>
-    <a
-      href="https://www.youtube.com/channel/UC2Fn-2lAadf_VidOFKaiExQ"
-      target="_blank"
-      >YouTube</a
-    >
-    <h3>Мои Хобби</h3>
-    <ul>
-      <li>Спорт</li>
-      <li>Учёба Frontend разработки</li>
-      <li>Аниме</li>
-      <li>Активный отдых</li>
-    </ul>
-    <h3>Опыт работы</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Название</th>
-          <th>Должность</th>
-          <th>Период</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>КФС Культура</td>
-          <td>Повар</td>
-          <td>2008-2013г</td>
-        </tr>
-        <tr>
-          <td>КФС Гаккелевская</td>
-          <td>Product Менеджер</td>
-          <td>2013-2015г</td>
-        </tr>
-        <tr>
-          <td>Токио Сити</td>
-          <td>Официант</td>
-          <td>2015-2023г</td>
-        </tr>
-      </tbody>
-    </table>
-    <h3>Связаться со мной</h3>
-    <form>
-      <div>
-        <label for="text">Ваше имя</label>
-        <input type="text" id="text" />
+        <div class="info-card">
+          <div class="info">
+            <h1>Алексей Кутилов</h1>
+            <p>
+              Я обучаюсь <strong> разработке</strong> на уроках ResultSchool
+            </p>
+            <p>
+              В свободное время обучаюсь <em>программированию</em> и так же
+              спортом
+            </p>
+          </div>
+          <div class="social">
+            <h2>Список социальных сетей:</h2>
+            <a href="https://vk.com/pecik" target="_blank">ВКонтакте</a>
+            <span>|</span>
+            <a href="https://github.com/xzPunisherxz" target="_blank">GitHub</a>
+            <span>|</span>
+            <a
+              href="https://www.youtube.com/channel/UC2Fn-2lAadf_VidOFKaiExQ"
+              target="_blank"
+              >YouTube</a
+            >
+          </div>
+        </div>
       </div>
-      <div>
-        <label for="email">Ваше email</label>
-        <input type="email" id="email" />
+
+      <div class="hobbi card">
+        <h3>Мои Хобби</h3>
+        <ul class="list">
+          <li>Спорт</li>
+          <li>Учёба Frontend разработки</li>
+          <li>Аниме</li>
+          <li>Активный отдых</li>
+        </ul>
       </div>
-      <div>
-        <label for="message">Ваше сообщение</label>
-        <br />
-        <textarea
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Введите ваше сообщение..."
-        ></textarea>
+      <div class="work card">
+        <h3>Опыт работы</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Название</th>
+              <th>Должность</th>
+              <th>Период</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>КФС Культура</td>
+              <td>Повар</td>
+              <td>2008-2013г</td>
+            </tr>
+            <tr>
+              <td>КФС Гаккелевская</td>
+              <td>Product Менеджер</td>
+              <td>2013-2015г</td>
+            </tr>
+            <tr>
+              <td>Токио Сити</td>
+              <td>Официант</td>
+              <td>2015-2023г</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <button type="submit">Отправить!</button>
-    </form>
+      <div class="contacts card">
+        <form>
+          <h3>Связаться со мной</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="text">Ваше имя</label>
+              <input type="text" id="text" placeholder="Введите ваше имя" />
+            </div>
+            <div class="form-group">
+              <label for="email">Ваше email</label>
+              <input type="email" id="email" placeholder="Введите вашу почту" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Ваше сообщение</label>
+
+            <textarea
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Введите ваше сообщение..."
+            ></textarea>
+          </div>
+          <button class="btn" type="submit">Отправить!</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
